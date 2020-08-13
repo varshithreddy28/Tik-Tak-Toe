@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>TTT Board</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Lora:ital@0;1&family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Niconne&family=Syncopate&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/tictac.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Tic-Tak-Toe</h1><span class='menu'>menu<i class="fas fa-bars"></i></span>
+		<div id='menu'>
+				<p id='select'>Select the choise</p>
+				<input name='chooise' type='radio' class="chooise" value='x'required>
+				<label for='player1'> <span class="play">player1-x</span><span class="play">player2-o</span> </label>
+				<br>
+				<input name='chooise' type='radio' class="chooise" value="o" required>
+				<label for='player2'><span class="play">player1-o</span><span class="play">player2-x</span> </label>
+				<br>			
+				<span>Game Point : <span id='max'>0</span></span>
+				<input id='input' type='number'>
+				<div><button id='rb' class="btn btn-outline-success">Reset Score</button></div>
+		</div>	
+		<div class="input">			
+			<h2>TIED</h2>
+			<span id='scorea'>player1 :<span id='min1'>0</span></span><span id="scoreb">player2 :<span id='min2'>0</span></span>
+			<script type="text/javascript" src='score.js'></script>
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+				</tr>
+				<tr>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+				</tr>
+				<tr>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+					<td class='elemen'><span class="space"></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<button id='reset' class="btn btn-secondary btn-lg">RESET BOARD</button>
+		<div class="name">
+			<p>game by -</p>
+			<p>b.varshith reddy</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/tictac.js"></script>
+</body>
+</html>
